@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>California Internet</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= google_webfonts_link_tag "Lato" => 400 %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span12">
+        <%= yield %>
+      </div>
+    </div>
+	<footer>
+	</footer>
+</div> <!--! end of .container -->
+
+</body>
+</html>

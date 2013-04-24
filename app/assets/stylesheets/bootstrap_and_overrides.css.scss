@@ -1,0 +1,61 @@
+@import "bootstrap";
+body {padding:0px;background:#fff;}
+@import "bootstrap-responsive";
+
+body { font-family:lato;background:#438cdb; }
+.container-fluid {padding:0px;}
+
+// Header
+.navbar-fixed-top .navbar-inner {
+	-webkit-box-shadow:  0px 2px 3px 0px rgba(13, 0, 0, 0.2);
+     box-shadow:  0px 2px 3px 0px rgba(13, 0, 0, 0.2);
+}
+.navbar-inner {padding:0px!important;border:none;}
+#top-nav-container {width:100%;height:35px;background: url(/assets/bg_bars.png) #053c66;
+-webkit-box-shadow: inset 0px -1px 5px 1px rgba(0, 0, 0, 0.3);
+box-shadow: inset 0px -1px 5px 1px rgba(0, 0, 0, 0.3);}
+#top-nav {}
+#top-nav a {font-size:13px;line-height:17px;color:#08c0ff;text-shadow:none;}
+#bottom-nav-container { height:75px;width:100%;
+	background: #438cdb; /* Old browsers */
+	background: -moz-linear-gradient(top,  #438cdb 0%, #346eb2 1%, #438cdb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#438cdb), color-stop(1%,#346eb2), color-stop(100%,#438cdb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #438cdb 0%,#346eb2 1%,#438cdb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #438cdb 0%,#346eb2 1%,#438cdb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #438cdb 0%,#346eb2 1%,#438cdb 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #438cdb 0%,#346eb2 1%,#438cdb 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#438cdb', endColorstr='#438cdb',GradientType=0 ); /* IE6-9 */
+}
+#bottom-nav-container ul {margin-top:15px;}
+#bottom-nav-container a { color:#ffffff;font-size:17px;text-shadow:none;letter-spacing:0.5px; }
+#logo {max-width:200px;margin-top:5px;}
+
+// Hero
+#site-container {margin-top:105px;}
+#hero {height:520px;background: url(/assets/splash.png) repeat scroll 0 0;-webkit-box-shadow: inset 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+box-shadow: inset 0px 1px 3px 1px rgba(0, 0, 0, 0.2); }
+#hero-content h2 {text-align:center;color:#ffffff;font-family:lato;margin-top:30px;}
+#hero-stage {width:100%;height:310px;}
+#hero-content p {text-align:center;}
+#call-to-action-btn { background:#0dc3ff;border:none;font-family:lato;font-size:31px;font-weight:bold;color:#ffffff;padding:28px 50px;
+    -webkit-border-radius: 6px;border-radius: 6px;
+	-webkit-box-shadow: 0px 6px 0px 0px #05ace5, 0px 1px 9px 2px rgba(13, 0, 0, 0.1);
+	box-shadow: 0px 6px 0px 0px #05ace5;text-shadow: 0px -1px 0px rgba(0,0,0,.5), 0px 1px 9px 2px rgba(13, 0, 0, 0.1);
+}
+
+// Quotes
+#quotes-container {height:100px;background: url(/assets/customer_logos.png) no-repeat center #043a63;background-size:auto 70px;-webkit-box-shadow: inset 0px 0px 18px 2px rgba(0, 0, 0, 0.7);
+box-shadow: inset 0px 0px 18px 2px rgba(0, 0, 0, 0.7);}
+#quote {max-width:400px;padding-top:5px;margin:0 auto;}
+#home-quote-main {width:280px;margin:0px;padding:0px;font-family:lato;font-size:24px;color:#fff;text-shadow: 0px 1px 1px #000000;filter: dropshadow(color=#000000, offx=0, offy=1);}
+#home-quote-source {text-align:right;width:260px;margin:0px 10px;padding:5px 0px 0px 0px;font-family:lato;font-size:15px;color:#08c0ff;text-shadow: 0px 1px 1px #000000;filter: dropshadow(color=#000000, offx=0, offy=1);}
+#home-quote-image {float:right;display:block;width:90px;text-align:right;}
+#circle-quote-home {float:right;max-height:90px;margin-top:5px;}
+
+// Info Boxes
+#info-box-inner {min-height:800px;padding-top:30px;}
+.info-box {min-height:300px!important;margin-bottom:25px;-webkit-border-radius: 9px;border-radius: 9px;opacity:1;background: rgba(5, 64, 105, 0.3);
+-webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+
+}
