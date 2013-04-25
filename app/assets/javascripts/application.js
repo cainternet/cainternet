@@ -15,6 +15,7 @@
 //= require underscore
 //= require backbone
 //= require california_internet
+//= require bonsai
 //= require_tree ../templates
 //= require_tree ./models
 //= require_tree ./collections

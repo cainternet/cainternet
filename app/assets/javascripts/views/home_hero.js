@@ -1,9 +1,9 @@
-CaliforniaInternet.Views.DashboardHero = Backbone.View.extend({
+CaliforniaInternet.Views.Hero = Backbone.View.extend({
 	
 	tagName: "div",
-	id: "",
-	className: "row-fluid",
-	template: JST['home/dashboard_hero'],
+	id: "heroContent",
+	className: "offset2 span8",
+	template: JST['home/hero'],
 
 	initialize: function() {
 		_.bindAll(this);
@@ -11,6 +11,7 @@ CaliforniaInternet.Views.DashboardHero = Backbone.View.extend({
 	},
 
 	events: {
+		"mouseover #call-to-action-btn":  "ctaBtnHover"
     },
 
     panBackground: function() {
@@ -21,6 +22,9 @@ CaliforniaInternet.Views.DashboardHero = Backbone.View.extend({
 		    pos++;
 		    $("#hero").css({backgroundPosition: (pos * -1.2) + "px 0px"});
 		}
+    },
+
+    ctaBtnHover: function() {
     },
 
 	render: function () {
