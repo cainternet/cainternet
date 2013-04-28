@@ -1,14 +1,40 @@
 @import "bootstrap";
-body {padding:0px;background:#fff;}
 @import "bootstrap-responsive";
+@import "font-awesome";
 
-body { font-family:lato;font-weight: 400;background:#438cdb; }
+body { padding:0px;font-family:lato;font-weight: 400;background:#438cdb; }
 .container-fluid {padding:0px;}
+
+// Modal Styles
+.modal {-webkit-border-radius: 13px;border-radius: 13px}
+.modal-backdrop {background:#053355;opacity:0.7!important}
+.modal-header {background:#438cdb;-webkit-border-radius: 9px 9px 0px 0px;border-radius: 9px 9px 0px 0px;text-align:center;color:#fff;font-family:lato;font-weight: 400;border:none;}
+.modal-body {background:#438cdb;border:none;min-height:130px;}
+.modal-footer {background:#043a63;border-top:0px!important;-webkit-box-shadow: inset 0px 2px 6px -2px rgba(0, 0, 0, 0.5);
+box-shadow: inset 0px 2px 6px -2px rgba(0, 0, 0, 0.5);}
+.modal-body hr {border:1px solid #fff;margin:5px auto;width:60%;color:#a3e8ff!important;}
 
 // Re-Useable Styles
 .c-font {font-family:lato;font-weight:400;}
 .c-bold {font-weight:700}
 .c-text-shadow {text-shadow: 0px 1px 1px #000000;filter: dropshadow(color=#000000, offx=0, offy=1);}
+.c-centered {float:none;text-align:center;}
+.c-btn {background:#0dc3ff;border:none;font-family:lato;font-weight: 400;font-size:16px;color:#ffffff;padding:9px 24px;
+    -webkit-border-radius: 6px;border-radius: 6px;
+	-webkit-box-shadow: 0px 4px 0px 0px #05ace5, 0px 1px 9px 2px rgba(13, 0, 0, 0.1);
+	box-shadow: 0px 4px 0px 0px #05ace5;text-shadow: 0px -1px 0px rgba(0,0,0,.5), 0px 1px 9px 2px rgba(13, 0, 0, 0.1);
+	text-shadow:none;
+	-webkit-transition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-ms-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;}
+.c-btn:hover {background:#5ed7ff;color:white;
+	-webkit-transition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-ms-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;}
 
 // Header
 .navbar-fixed-top .navbar-inner {
@@ -32,12 +58,13 @@ box-shadow: inset 0px -1px 5px 1px rgba(0, 0, 0, 0.3);}
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#438cdb', endColorstr='#438cdb',GradientType=0 ); /* IE6-9 */
 }
 #bottom-nav-container ul {margin-top:15px;}
-#bottom-nav-container a { color:#ffffff;font-size:17px;text-shadow:none;letter-spacing:0.5px; }
+#bottom-nav-container a { color:#ffffff;font-size:17px;text-shadow:none;letter-spacing:0.5px;font-weight:400!important; }
+#bottom-nav-container a:hover {}
 #logo {max-width:200px;margin-top:5px;}
 
 // Hero
-#site-container {margin-top:105px;}
-#hero {height:520px;background: url(/assets/splash.png) repeat scroll 0 0;-webkit-box-shadow: inset 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+#site-container {}
+#hero {height:520px;margin-top:105px;background: url(/assets/splash.png) repeat scroll 0 0;-webkit-box-shadow: inset 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
 box-shadow: inset 0px 1px 3px 1px rgba(0, 0, 0, 0.2); }
 #tagline {display:none;text-align:center;color:#ffffff;font-family:lato;font-weight: 700;margin-top:30px;}
 #heroStage {width:100%;height:310px;}
@@ -51,18 +78,85 @@ box-shadow: inset 0px 1px 3px 1px rgba(0, 0, 0, 0.2); }
 // Quotes
 #quotes-container {height:100px;background: url(/assets/customer_logos.png) no-repeat center #043a63;background-size:auto 70px;-webkit-box-shadow: inset 0px 0px 18px 2px rgba(0, 0, 0, 0.7);
 box-shadow: inset 0px 0px 18px 2px rgba(0, 0, 0, 0.7);}
+
+.fade-blocks-wrapper {
+	height: 100px;
+	position: relative;
+	overflow: hidden;
+}
+.fade-block {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.fade-block .block {
+	width: 100%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	font-size: 2em;
+}
+.fade-block:nth-child(2) .block {
+	color: #fff;
+}
+.fade-block:nth-child(3) .block {
+}
+
+
 #quote {max-width:400px;padding-top:5px;margin:0 auto;}
-#home-quote-main {width:280px;margin:0px;padding:0px;font-family:lato;font-weight: 700;font-size:24px;color:#fff;text-shadow: 0px 1px 1px #000000;filter: dropshadow(color=#000000, offx=0, offy=1);}
-#home-quote-source {text-align:right;width:260px;margin:0px 10px;padding:5px 0px 0px 0px;font-family:lato;font-weight: 700;font-size:15px;color:#08c0ff;text-shadow: 0px 1px 1px #000000;filter: dropshadow(color=#000000, offx=0, offy=1);}
-#home-quote-image {float:right;display:block;width:90px;text-align:right;}
-#circle-quote-home {float:right;max-height:90px;margin-top:5px;}
+
+.home-quote-main {margin:0px;padding:0px;font-family:lato;font-weight: 700;color:#fff;text-shadow: 0px 1px 1px #000000;filter: dropshadow(color=#000000, offx=0, offy=1);}
+
+.home-quote-source {padding:0px;font-family:lato;font-weight: 700;font-size:19px;color:#08c0ff;text-shadow: 0px 1px 1px #000000;filter: dropshadow(color=#000000, offx=0, offy=1);}
+
+#circle-quote-home {float:right;max-height:90px;margin:5px 10px 0px 10px;}
 
 // Info Boxes
 #info-box-inner {min-height:800px;padding-top:30px;}
-.info-box {min-height:300px!important;margin-bottom:25px;-webkit-border-radius: 9px;border-radius: 9px;opacity:1;background-color: rgba(5, 64, 105, 0.3); -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3); box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3); }
-.info-box hr {border:1px solid #438cdb;margin:5px 0px;}
+.info-box {min-height:300px!important;margin-bottom:25px;-webkit-border-radius: 9px;border-radius: 9px;opacity:1;background-color: rgba(5, 64, 105, 0.6); -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3); box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3); }
+.info-box hr {border:1px solid #438cdb;opacity:0.4;margin:5px 0px;}
 #info-box-one .info-text {padding: 80px 0px 0px 60px;color:#fff;}
 #info-box-two .info-text {padding: 80px 50px 0px 0px;color:#fff;}
 #info-box-three .info-text {padding: 85px 0px 0px 100px;color:#fff;}
 #info-box-four .info-text {padding: 60px 50px 0px 0px;color:#fff;}
-.info-text h5 { font-size:17px;line-height:23px}
+.info-text h5 { font-size:17px;line-height:26px}
+
+// Support Modal
+.support-method {font-family:lato;color:#ffffff;font-size:20px;text-align:center;margin:0 auto 16px auto;line-height:26px;}
+#support-method-call {}
+#support-method-call-number, #support-method-email-address, #support-method-address {color:#a3e8ff!important;font-size:16px;}
+
+// CSS Animations
+.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}.animated.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(1); }	50% { -webkit-transform: scale(1.1); }
+    100% { -webkit-transform: scale(1); }
+}
+@-moz-keyframes pulse {
+    0% { -moz-transform: scale(1); }	
+	50% { -moz-transform: scale(1.1); }
+    100% { -moz-transform: scale(1); }
+}
+@-o-keyframes pulse {
+    0% { -o-transform: scale(1); }	
+	50% { -o-transform: scale(1.1); }
+    100% { -o-transform: scale(1); }
+}
+@keyframes pulse {
+    0% { transform: scale(1); }	
+	50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.pulse {
+	-webkit-animation-name: pulse;
+	-moz-animation-name: pulse;
+	-o-animation-name: pulse;
+	animation-name: pulse;
+}
+
+
+
+
+

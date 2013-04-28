@@ -28,6 +28,7 @@ gem 'bootstrap-sass', '>= 2.2.2.0'
 gem 'backbone-on-rails'
 gem 'figaro'
 gem 'google-webfonts'
+gem 'font-awesome-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

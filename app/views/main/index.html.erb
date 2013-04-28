@@ -32,9 +32,9 @@
 			      <div class="nav-collapse collapse">
 			        <!-- .nav, .navbar-search, .navbar-form, etc -->
 			        <ul class="nav pull-right">
-					  <li><a href="#">Business</a></li>
-					  <li><a href="#">Residential</a></li>
-					  <li><a href="#">Support</a></li>
+					  <li><a id="business-link" href="#">Business</a></li>
+					  <li><a id="residential-link" href="#">Residential</a></li>
+					  <li><a id="support-link" class="pulse" href="#">Support</a></li>
 					</ul>
 			      </div>
 
@@ -45,7 +45,7 @@
 
 <div id="body-container" class="row-fluid">
 	<div id="site-container" class="span12">
-		<div class="row-fluid">
+		<div class="row-fluid hidden-phone">
 			<div id="hero" class="span12">
 				<div id="hero-content-container" class="row-fluid">
 				</div>
@@ -53,17 +53,42 @@
 		</div> <!-- #hero -->
 		<div class="row-fluid">
 			<div id="quotes-container" class="span12">
-				<table id="quote">
-					<tr>
-						<td style="margin:0px;">
-							<h4 id="home-quote-main">These guys are awesome.</h4>
-							<h6 id="home-quote-source">Kanye West</h6>
-						</td>
-						<td>
-							<%= image_tag("quote_circle.png", :id => "circle-quote-home", :draggable => false) %>
-						</td>
-					</tr>
-				</table>
+				<div id="quotes-slider">
+
+					<!-- First Quote -->
+					<div class="row-fluid">
+						<div class="quote-slide offset4 span4">
+							<table id="quote" >
+								<tr>
+									<td style="margin:0px;">
+										<h4 id="home-quote-west" class="home-quote-main" style="font-size:26px;margin-top:10px;">These guys are tight.</h4>
+										<h6 class="home-quote-source" style="text-align:right;margin-right:5px;">Kanye West</h6>
+									</td><td>
+										<%= image_tag("quote_west.png", :id => "circle-quote-home", :draggable => false) %>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div> <!-- .row-fluid -->
+
+					<!-- Second Quote -->
+					<div class="row-fluid">
+						<div class="quote-slide offset4 span4">
+							<table id="quote" >
+								<tr>
+									<td style="margin:0px;">
+										<%= image_tag("quote_sheen.png", :id => "circle-quote-home", :draggable => false) %>
+									</td><td>
+										<h4 id="home-quote-sheen" class="home-quote-main" style="font-size:19px;margin-top:10px">These dudes know how to party.</h4>
+										<h6 class="home-quote-source" style="text-align:left;margin-left:2px;">Charlie Sheen</h6>
+									</td>
+								</tr>
+							</table>
+						</div> <!-- .quote-slide -->
+					</div> <!-- .row-fluid -->
+
+				</div> <!-- #quotes-slider -->
+
 			</div> <!-- span12-->
 		</div> <!-- row-fluid -->
 		<div class="row-fluid">
@@ -92,7 +117,7 @@
 								    <div class="info-text span7">
 								    	<h2 class="c-font c-bold c-text-shadow">Lowest Prices, Guaranteed</h2>
 								    	<hr>
-								    	<h5 class="c-font c-text-shadow">We'll beat the prices of any other service provider in California</h5>
+								    	<h5 class="c-font c-text-shadow">We'll beat the prices of any other internet service provider in California</h5>
 								    </div>
 								</div><!-- row-fluid -->
 							</div> <!-- span12-->
@@ -102,7 +127,7 @@
 								<div class="info-text span7">
 							    	<h2 class="c-font c-bold c-text-shadow">Incredible 24x7 Support</h2>
 							    	<hr>
-							    	<h5 class="c-font c-text-shadow">Really, htis stuff is amazing</h5>
+							    	<h5 class="c-font c-text-shadow">We're always available when you need us.</h5>
 							    </div>
 							    <div class="info-image span5">
 
@@ -117,7 +142,7 @@
 								    <div class="info-text span7">
 								    	<h2 class="c-font c-bold c-text-shadow">Largest Coverage Area in California</h2>
 								    	<hr>
-								    	<h5 class="c-font c-text-shadow">Really, htis stuff is amazing</h5>
+								    	<h5 class="c-font c-text-shadow">From urban areas to rural residential areas, we'll connect anyone.</h5>
 								    </div>
 								</div><!-- row-fluid -->
 							</div> <!-- span12-->
@@ -128,3 +153,6 @@
 		</div> <!-- row-fluid -->
 	</div>	<!-- site-container -->
 </div>
+
+<!-- Modals Below -->
+<div id="supportModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>

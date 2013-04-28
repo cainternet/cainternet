@@ -6,7 +6,8 @@ CaliforniaInternet.Views.Hero = Backbone.View.extend({
 	template: JST['home/hero'],
 
 	initialize: function() {
-		_.bindAll(this);
+		_.bindAll(this, 'detect_scroll');
+		$(window).scroll(this.detect_scroll);
 		this.panBackground();
 	},
 
@@ -22,6 +23,10 @@ CaliforniaInternet.Views.Hero = Backbone.View.extend({
 		    pos++;
 		    $("#hero").css({backgroundPosition: (pos * -1.2) + "px 0px"});
 		}
+    },
+
+    detect_scroll: function() {
+    	console.log("picture me scrollin'");
     },
 
     ctaBtnHover: function() {

@@ -15,7 +15,8 @@
 //= require underscore
 //= require backbone
 //= require california_internet
-//= require bonsai
+//= require bootstrap-modal
+//= require jquery.cycle.lite
 //= require_tree ../templates
 //= require_tree ./models
 //= require_tree ./collections
