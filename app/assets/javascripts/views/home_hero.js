@@ -35,14 +35,14 @@ CaliforniaInternet.Views.HomeView = Backbone.View.extend({
     	 	$("#info-box-four").removeClass('info-box-hover');
     	 } // End IF Statement
 
-    	 if ( $(window).scrollTop() >= 300 && $(window).scrollTop() <= 730 ) {
-    	 	$("#info-box-one").addClass('info-box-hover');
+    	 if ( $(window).scrollTop() >= 300 && $(window).scrollTop() <= 680 ) {
+    	 	$("#info-box-one").addClass('info-box-hover').fadeIn(900)
     	 	$("#info-box-two").removeClass('info-box-hover');
     	 	$("#info-box-three").removeClass('info-box-hover');
     	 	$("#info-box-four").removeClass('info-box-hover');
     	 } // End IF Statement
 
-    	 if ( $(window).scrollTop() >= 729 && $(window).scrollTop() <= 1050 ) {
+    	 if ( $(window).scrollTop() >= 681 && $(window).scrollTop() <= 1050 ) {
     	 	$("#info-box-two").addClass('info-box-hover');
     	 	$("#info-box-one").removeClass('info-box-hover');
     	 	$("#info-box-three").removeClass('info-box-hover');
