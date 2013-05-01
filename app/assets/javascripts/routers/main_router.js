@@ -1,17 +1,17 @@
 CaliforniaInternet.Routers.Main = Backbone.Router.extend({
 	
 	routes: {
-    	"":                   "homeHero"
+    	"":                   "home"
     },
 
     initialize: function() {
       _.bindAll(this);
     }, // End of initialize
 
-    homeHero: function() {
+    home: function() {
 
-      var homeHero = new CaliforniaInternet.Views.Hero({})
-      $('#hero-content-container').html(homeHero.render().$el);
+      var homeView = new CaliforniaInternet.Views.HomeView({})
+      $('#hero-content-container').html(homeView.render().$el);
       // Event Bindings for Navigation
       $("#support-link").click(function() {
           $('#supportModal').modal({
@@ -27,6 +27,6 @@ CaliforniaInternet.Routers.Main = Backbone.Router.extend({
 
       $('#quotes-slider').cycle({fx:'fade'});
 
-    }
+    } // END home
 
 }); // End of Router.Deals
