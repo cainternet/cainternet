@@ -20,7 +20,7 @@
                   <ul class="nav pull-right">
                   <li><a href="#">Blog</a></li>
                   <li><a href="#">Service Areas</a></li>
-                  <li><a href="#">Our Customers</a></li>
+                  <li><%= link_to "Our Customers", { :controller => "main", :action => "customers" }, :class => '', :style => '' %></li>
                   <li><a href="#">Partner Program</a></li>
                   <li><a href="#">About Us</a></li>
                   <li><a href="#">Mission</a></li>
@@ -40,7 +40,9 @@
                     </a>
                
                     <!-- Be sure to leave the brand out there if you want it shown -->
-                    <a class="brand" href="#"><%= image_tag("logo.png", :id => 'logo', :draggable => false ) %></a>
+                    <%= link_to root_url, :class => "brand" do %>
+                      <%= image_tag("logo.png", :alt => 'California Internet', :id => 'logo', :draggable => false ) %>
+                    <% end %>
                
                     <!-- Everything you want hidden at 940px or less, place within here -->
                     <div class="nav-collapse collapse">
