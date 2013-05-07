@@ -6,4 +6,7 @@ class MainController < ApplicationController
 	def customers
 	end
 
+	def about
+	end
+
 end
