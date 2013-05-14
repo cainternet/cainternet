@@ -1,0 +1,21 @@
+<div class="row-fluid">
+  <div id="cities-container" class="offset2 span8">
+
+        <h3 class="c-centered" style="margin-bottom:0px;padding-bottom:0px;">California Counties</h3>
+        <p class="c-centered c-white" style="font-size:12px;font-weight:400;padding-top:0px;margin-top:0px;opacity:0.5;">Select One to View Cities</p>
+        <hr>
+        <table class="table table-condensed c-centered">
+
+        <% @counties.each do |c| %>
+          <tr>
+            <td colspan="3" class="c-white c-centered" style="padding:0px;">
+                <h5 class="c-centered c-blue" style="margin:2px;">
+                  <%= link_to c, { :controller => "cities", :action => "cities", :county => c }%>
+                </h5>
+            </td>
+          </tr>
+        <% end %>
+        </table>
+
+  </div>
+</div>

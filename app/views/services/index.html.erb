@@ -1,0 +1,30 @@
+<div class="row-fluid">
+  <div id="services-container" class="offset2 span8">
+
+        <h3 class="c-centered">Available Services</h3>
+        <hr>
+        <table class="table table-condensed c-centered">
+          <tr>
+            <th></th>
+          </tr>
+
+        <% @services.each do |service| %>
+          <tr>
+            <td colspan="3" class="c-white c-centered">
+              <%= link_to service do %>
+                <h4 class="c-centered" style="margin-bottom:0px;"><%= service.service %></h4>
+              <% end %>
+            </td>
+          </tr>
+          <tr>
+            <td class="c-centered" style="text-align:center!important;font-size:11px;padding:0px;"><%= link_to 'Show', service %> &nbsp; <%= link_to 'Edit', edit_service_path(service) %> &nbsp; <%= link_to 'Delete', service, method: :delete, data: { confirm: "Are you sure?  You will delete all of this Service's data for every City in California..."} %></td>
+          </tr>
+        <% end %>
+        </table>
+
+        <br />
+
+        <center><%= link_to 'Add New Service', new_service_path, :class => 'btn c-btn c-centered' %></center>
+
+  </div>
+</div>

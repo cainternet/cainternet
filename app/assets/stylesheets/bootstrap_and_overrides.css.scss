@@ -2,8 +2,13 @@
 @import "bootstrap-responsive";
 @import "font-awesome";
 
-body { padding:0px;font-family:lato;font-weight: 400;background:#438cdb; }
+body { padding:0px;font-family:lato;font-weight: 400;background:#438cdb!important; }
 .container-fluid {padding:0px;}
+html, p, h1, h2, h3, h4, h5, h6 {color:#fff;font-weight:700;}
+a, a:visited {color:#7fdeff}
+a:hover {text-decoration:none;color:#9ae6ff;}
+.table td, .table th {border:none;}
+ul {margin:0px;}
 
 // Modal Styles
 .modal {-webkit-border-radius: 13px;border-radius: 13px}
@@ -15,13 +20,14 @@ box-shadow: inset 0px 2px 6px -2px rgba(0, 0, 0, 0.5);}
 .modal-body hr {border:1px solid #fff;margin:5px auto;width:60%;color:#a3e8ff!important;}
 
 // Re-Useable Styles
+#notice {color:#a6ffcc;}
 .c-font {font-family:lato;font-weight:400;}
 .c-bold {font-weight:700}
 .c-text-shadow {text-shadow: 0px 1px 1px #000000;filter: dropshadow(color=#000000, offx=0, offy=1);}
 .c-centered {float:none;text-align:center;}
 .c-white {color:#ffffff}
 .c-blue {color:#7fdeff;}
-.c-btn {background:#0dc3ff;border:none;font-family:lato;font-weight: 400;font-size:16px;color:#ffffff;padding:9px 24px;
+.c-btn {background:#0dc3ff;border:none;font-family:lato;font-weight: 400;font-size:16px;color:#ffffff!important;padding:9px 24px;
     -webkit-border-radius: 6px;border-radius: 6px;
 	-webkit-box-shadow: 0px 4px 0px 0px #05ace5, 0px 1px 9px 2px rgba(13, 0, 0, 0.1);
 	box-shadow: 0px 4px 0px 0px #05ace5;text-shadow: 0px -1px 0px rgba(0,0,0,.5), 0px 1px 9px 2px rgba(13, 0, 0, 0.1);
@@ -37,6 +43,21 @@ box-shadow: inset 0px 2px 6px -2px rgba(0, 0, 0, 0.5);}
 	-ms-transition: background 0.5s linear;
 	-o-transition: background 0.5s linear;
 	transition: background 0.5s linear;}
+.c-btn-flat {background:#0dc3ff;border:none;font-family:lato;font-weight: 400;font-size:16px;color:#ffffff!important;padding:9px 24px;
+    -webkit-border-radius: 6px;border-radius: 6px;
+	text-shadow:none;
+	-webkit-transition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-ms-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;}
+.c-btn-flat:hover {background:#5ed7ff;color:white;
+	-webkit-transition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-ms-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;
+	}
 
 // Header
 .navbar-fixed-top .navbar-inner {
@@ -44,7 +65,7 @@ box-shadow: inset 0px 2px 6px -2px rgba(0, 0, 0, 0.5);}
      box-shadow:  0px 2px 3px 0px rgba(13, 0, 0, 0.2);
 }
 .navbar-inner {padding:0px!important;border:none;}
-#top-nav-container {width:100%;height:35px;background: url(/assets/bg_bars.png) #053c66;
+#top-nav-container {width:100%;height:35px;background: #053c66;
 -webkit-box-shadow: inset 0px -1px 5px 1px rgba(0, 0, 0, 0.3);
 box-shadow: inset 0px -1px 5px 1px rgba(0, 0, 0, 0.3);}
 #top-nav {}
@@ -116,7 +137,7 @@ box-shadow: inset 0px 0px 18px 2px rgba(0, 0, 0, 0.7);}
    transition: all 0.4s linear;
 }
 
-.header-text {font-size:80px;font-weight:700;color:#ffffff;margin-top:60px;}
+.header-text {font-size:50px;font-weight:700;color:#ffffff;margin-top:60px;}
 
 // Customers
 #customers-header {margin-top:110px;height:170px;background: url(/assets/customers_bg.jpg) repeat scroll 0 0;background-size:100%;-webkit-box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.8);box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.8);}
@@ -130,11 +151,30 @@ box-shadow: inset 0px 0px 18px 2px rgba(0, 0, 0, 0.7);}
 #about-team {}
 #about-team img {float:none;border:none;max-height:80px;margin:0px auto;}
 
+// Service Areas
+#service-areas-header {margin-top:110px;height:170px;background: url(/assets/service_areas_bg.jpg) repeat scroll 0 0;background-size:100%;-webkit-box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.8);box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.8);}
+#service-areas-container {min-height:300px;padding:20px;margin-top:140px;background:rgba(6,67,108,0.6);-webkit-border-radius: 9px;border-radius: 9px;}
+#service-areas-container h2 {color:#fff;}
+#service-areas-container h4 {font-weight:400;}
+
+// Partner Program
+#partner-program-header {margin-top:110px;height:170px;background: url(/assets/partner_program_bg.jpg) repeat scroll 0 0;background-size:100%;-webkit-box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.8);box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.8);}
+#partner-program-container {min-height:500px;padding:20px;margin-top:20px;background:rgba(6,67,108,0.6);-webkit-border-radius: 9px;border-radius: 9px;}
 
 // Support Modal
 .support-method {font-family:lato;color:#ffffff;font-size:20px;text-align:center;margin:0 auto 16px auto;line-height:26px;}
 #support-method-call {}
 #support-method-call-number, #support-method-email-address, #support-method-address {color:#a3e8ff!important;font-size:16px;}
+
+// Admin Area
+#admin-nav { background: #000;box-shadow:none; }
+#services-container, #cities-container {float:none;min-height:300px;margin:15px auto 25px auto!important;padding:20px 20px 40px 20px;-webkit-border-radius: 9px;border-radius: 9px;opacity:1;background-color: rgba(5, 64, 105, 0.6); -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3); box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3); }
+#services-container hr, #cities-container hr {border:1px solid #438cdb;opacity:0.4;margin:5px 0px;}
+#new_service {width:80%;max-width:250px;margin:0 auto;text-align:center}
+.service-description-text {height:150px;}
+#admin-menu-list {list-style-type:none;}
+#admin-menu-list a, #admin-menu-list a:visited {color:rgba(5, 64, 105, 0.6)}
+
 
 // CSS Animations
 .animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}.animated.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}@-webkit-keyframes pulse {

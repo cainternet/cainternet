@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>California Internet - Admin Area</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= google_webfonts_link_tag "Lato" => [100, 400, 700] %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container-fluid" style="padding:0px 20px;">
+    <div class="row-fluid">
+      <div class="span12">
+          <div class="navbar navbar-fixed-top">
+            <div id="admin-nav" class="navbar-inner">
+              <div class="row-fluid">
+                 <div class="offset3 span6" style="padding:0px 10px">
+                    <%= link_to '/admin', :class => "brand" do %>
+                      <%= image_tag("logo_admin.png", :alt => 'California Internet', :id => 'logo', :draggable => false ) %>
+                    <% end %>
+                    <a href="#" id="example" class="pull-right btn c-btn-flat" style="margin-top:20px;" rel="popover" >Menu</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        <div class="row-fluid"  style="padding:0px 20px;">
+          <div class="offset2 span8 hidden-phone" style="height:100px;">
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="offset2 span8">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+    </div>
+	<footer>
+	</footer>
+</div> <!--! end of .container -->
+
+<script>  
+$(function () {
+
+    var menuContent = '<ul id="admin-menu-list"><li><%= link_to "Services", { :controller => "services", :action => "index" }, :class => '', :style => '' %></li><hr style="margin:5px 0px;"><li><%= link_to "Cities", { :controller => "cities", :action => "counties" }, :class => '', :style => '' %></li></ul>';
+
+    $("#example").popover({
+      placement: 'bottom',
+      content: menuContent,
+      html: true
+    });  
+
+}); // function() 
+</script> 
+
+</body>
+</html>
+
+

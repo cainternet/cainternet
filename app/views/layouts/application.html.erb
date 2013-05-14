@@ -4,7 +4,7 @@
   <title>California Internet</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
-  <%= google_webfonts_link_tag "Lato" => [400, 700] %>
+  <%= google_webfonts_link_tag "Lato" => [100, 400, 700] %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -19,11 +19,12 @@
 
                   <ul class="nav pull-right">
                   <li><a href="#">Blog</a></li>
-                  <li><a href="#">Service Areas</a></li>
+                  <li><%= link_to "Service Areas", { :controller => "main", :action => "service_areas" }, :class => '', :style => '' %></li>
                   <li><%= link_to "Our Customers", { :controller => "main", :action => "customers" }, :class => '', :style => '' %></li>
-                  <li><a href="#">Partner Program</a></li>
+                  <li><%= link_to "Partner Program", { :controller => "main", :action => "partner_program" }, :class => '', :style => '' %></li>
                   <li><%= link_to "About Us", { :controller => "main", :action => "about" }, :class => '', :style => '' %></li>
                   <li><a href="#">Contact</a></li>
+                  <li><a href="#" class="c-white">Log In</a></li>
                 </ul>
                 
                 </div>

@@ -9,4 +9,14 @@ class MainController < ApplicationController
 	def about
 	end
 
+	def service_areas
+	end
+
+	def check_area
+		
+	end
+
+	def partner_program
+	end
+
 end

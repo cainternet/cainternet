@@ -1,0 +1,21 @@
+<%= form_for(@service, :class => "form") do |f| %>
+  <% if @service.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@service.errors.count, "error") %> prohibited this service from being saved:</h2>
+
+      <ul>
+      <% @service.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= f.text_field :service, :placeholder => "Service Title", :style => 'text-align:center;', :maxlength => 200 %><br/>
+  <%= f.text_area :description, :placeholder => "Service Description", :class => 'service-description-text', :style => 'margin-bottom:0px;text-align:center;' %>
+  <p style="font-size:11px;text-align:center;color:#ffffff;margin-top:0px;padding-top:0px;">200 Characters Max</p>
+
+  <div class="actions">
+    <center><%= f.submit(:class => 'btn c-btn c-centered') %></center>
+  </div>
+<% end %>

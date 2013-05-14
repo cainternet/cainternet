@@ -1,7 +1,8 @@
 CaliforniaInternet.Routers.Main = Backbone.Router.extend({
 	
 	routes: {
-    	"":                   "home"
+    	"":                   "home",
+      "service":      "service"
     },
 
     initialize: function() {
@@ -27,6 +28,11 @@ CaliforniaInternet.Routers.Main = Backbone.Router.extend({
 
       $('#quotes-slider').cycle({fx:'fade'});
 
-    } // END home
+    }, // END home
+
+    service: function() {
+      var serviceView = new CaliforniaInternet.Views.ServiceView({})
+      $('#service-areas-container').html(serviceView.render().$el);
+    }
 
 }); // End of Router.Deals
