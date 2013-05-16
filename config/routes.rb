@@ -1,6 +1,6 @@
 CaliforniaInternet::Application.routes.draw do
 
-  # Admin Area
+  # Admin Routes
   namespace :management do
     match '', to: 'services#index'
     resources :services
@@ -9,7 +9,7 @@ CaliforniaInternet::Application.routes.draw do
     match 'county/update_city_service/:id', to: 'cities#update_city_service', :defaults => { :format => 'json' }
   end
 
-  # Visitor Area
+  # Visitor Routes
   match 'partner', to: 'main#partner_program'
   match 'getservice', to: 'main#list_services'
   match 'show_services', to: 'main#show_services', :defaults => { :format => 'json' }
