@@ -19,7 +19,6 @@
 
                   <ul class="nav pull-right">
                   <li><a href="#">Blog</a></li>
-                  <li><%= link_to "Service Areas", { :controller => "main", :action => "service_areas" }, :class => '', :style => '' %></li>
                   <li><%= link_to "Our Customers", { :controller => "main", :action => "customers" }, :class => '', :style => '' %></li>
                   <li><%= link_to "Partner Program", { :controller => "main", :action => "partner_program" }, :class => '', :style => '' %></li>
                   <li><%= link_to "About Us", { :controller => "main", :action => "about" }, :class => '', :style => '' %></li>
@@ -64,6 +63,9 @@
 	<footer>
 	</footer>
 </div> <!--! end of .container -->
+
+<!-- Modals Below -->
+<div id="supportModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
 
 </body>
 </html>

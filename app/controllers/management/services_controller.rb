@@ -55,11 +55,9 @@ module Management
             CityService.create!( :service => @service.service, :city_id => c.id, :available => true, :city_name => c.city )
           end
 
-          format.html { redirect_to management_service_path, notice: 'Service was successfully created.' }
-          format.json { render json: [:management, @service], status: :created, location: @service }
+          format.html { redirect_to management_service_path(@service), notice: 'Service was successfully created.' }
         else
           format.html { render action: "new" }
-          format.json { render json: [:management, @service.errors], status: :unprocessable_entity }
         end
       end
     end
@@ -89,10 +87,10 @@ module Management
       @city_services = CityService.destroy_all( :service => @service.service )
 
       respond_to do |format|
-        format.html { redirect_to services_url }
+        format.html { redirect_to management_services_url }
         format.json { head :no_content }
       end
     end
   end
-
+  
 end

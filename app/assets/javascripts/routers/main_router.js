@@ -1,12 +1,14 @@
 CaliforniaInternet.Routers.Main = Backbone.Router.extend({
 	
 	routes: {
-    	"":                   "home",
-      "service":      "service"
+    	"":                              "home",
+      "getservice":                    "getService",
+      "management/county/:county":     "adminCountyCities"
     },
 
     initialize: function() {
       _.bindAll(this);
+
     }, // End of initialize
 
     home: function() {
@@ -24,15 +26,48 @@ CaliforniaInternet.Routers.Main = Backbone.Router.extend({
       var infoBoxOne = new CaliforniaInternet.Views.InfoBoxOne({})
       $('#info-box-one').append(infoBoxOne.render().$el); 
       $("#tagline").delay(400).fadeIn("slow");
-      $("button#call-to-action-btn").delay(800).fadeIn("slow");
+      $("#call-to-action-btn").delay(800).fadeIn("slow");
 
       $('#quotes-slider').cycle({fx:'fade'});
 
     }, // END home
 
-    service: function() {
+    getService: function() {
       var serviceView = new CaliforniaInternet.Views.ServiceView({})
       $('#service-areas-container').html(serviceView.render().$el);
+    }, // END service
+
+    adminCountyCities: function() {
+      $('.city-service-form :checkbox').click(function() {
+          var $this = $(this);
+          if ($this.is(':checked')) {
+                var thisService = new CaliforniaInternet.Models.CityService({ id: $(this).attr("data-id") }); 
+                thisService.save({
+                    available: true
+                  }, {
+                    success: function () {
+                      console.log("saved")
+                    },
+                    error: function (model, xhr) {
+                      var errors = $.parseJSON(xhr.responseText).errors
+                      console.log(errors)
+                    }
+                }) // End of thisService.save
+          } else {
+                var thisService = new CaliforniaInternet.Models.CityService({ id: $(this).attr("data-id") }); 
+                thisService.save({
+                    available: false
+                  }, {
+                    success: function () {
+                      console.log("saved")
+                    },
+                    error: function (model, xhr) {
+                      var errors = $.parseJSON(xhr.responseText).errors
+                      console.log(errors)
+                    }
+                }) // End of thisService.save    
+          } // END if statement
+      }); // End checkbox click
     }
 
 }); // End of Router.Deals

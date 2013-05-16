@@ -14,7 +14,12 @@ CaliforniaInternet.Views.HomeView = Backbone.View.extend({
 	},
 
 	events: {
-		"mouseover #call-to-action-btn":  "ctaBtnHover"
+		"mouseover #call-to-action-btn":  "ctaBtnHover",
+        "click #call-to-action-btn":      "calltoAction"
+    },
+
+    calltoAction: function() {
+        
     },
 
     panBackground: function() {

@@ -1,0 +1,44 @@
+<div class="row-fluid">
+  <div id="cities-container" class="offset2 span8">
+
+  		<h6 class="" style="text-align:left;font-size:12px;margin:0px;padding:0px;"><i class="icon-arrow-left icon-white"></i> &nbsp; <%= link_to 'Back to Counties', { :controller => "cities", :action => "counties" }%></h6>
+        <h3 class="c-centered" style="margin-top:0px;"><%= @county %> Cities</h3>
+        <hr style="margin:10px auto;">
+        <% @cities.each do |c| %>
+        		<div class="row-fluid">
+  					<div id="city-container" class="span12">
+		                <h4 class="c-white c-centered" style="margin:15px 0px 8px 0px;"><%= c %></h4>
+		                <% @this_city = @city_services.where( :city_name => c ) %>
+		                <% @this_city.each do |t| %>
+		                	
+							<form class="city-service-form" style="margin-bottom:3px;">
+							  <fieldset>
+							    <label class="checkbox c-blue" style="margin:0px auto;max-width:150px;font-size:12px">
+							    	<% if t.available == true %>
+		                	  			<input type="checkbox" checked data-id="<%= t.id %>"> <%= t.service %>
+		                			<% else %>
+		                	   			<input type="checkbox" data-id="<%= t.id %>"> <%= t.service %>
+		                			<% end %>
+							    </label>
+							  </fieldset>
+							</form>
+
+		     
+		                <% end %>
+		            </div>
+		        </div>
+        <% end %>
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+

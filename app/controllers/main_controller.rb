@@ -9,12 +9,19 @@ class MainController < ApplicationController
 	def about
 	end
 
-	def service_areas
+	def list_services
 	end
 
-	def check_area
-		
-	end
+	def show_services
+      @city_name = params[:city_name]
+      @city_name = @city_name.titleize
+      if CityService.exists?( :city_name => @city_name )
+        @services= CityService.where(:city_name => @city_name)
+        render :json => @services
+      else
+        render :json => { :error => "No City Found" }
+      end
+    end
 
 	def partner_program
 	end

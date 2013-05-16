@@ -9,6 +9,19 @@ a, a:visited {color:#7fdeff}
 a:hover {text-decoration:none;color:#9ae6ff;}
 .table td, .table th {border:none;}
 ul {margin:0px;}
+hr {border-bottom:none;max-width:60%;opacity:0.5;margin:0px auto;}
+::-webkit-input-placeholder {
+   text-align:center; 
+}
+:-moz-placeholder { /* Firefox 18- */
+   text-align:center;  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align:center;  
+}
+:-ms-input-placeholder {  
+   text-align:center; 
+}
 
 // Modal Styles
 .modal {-webkit-border-radius: 13px;border-radius: 13px}
@@ -24,7 +37,7 @@ box-shadow: inset 0px 2px 6px -2px rgba(0, 0, 0, 0.5);}
 .c-font {font-family:lato;font-weight:400;}
 .c-bold {font-weight:700}
 .c-text-shadow {text-shadow: 0px 1px 1px #000000;filter: dropshadow(color=#000000, offx=0, offy=1);}
-.c-centered {float:none;text-align:center;}
+.c-centered {float:none;text-align:center!important;}
 .c-white {color:#ffffff}
 .c-blue {color:#7fdeff;}
 .c-btn {background:#0dc3ff;border:none;font-family:lato;font-weight: 400;font-size:16px;color:#ffffff!important;padding:9px 24px;
@@ -94,9 +107,9 @@ box-shadow: inset 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
 #hero-content-container {min-height:520px;}
 #heroContent {height:520px;}
 #tagline {display:none;text-align:center;color:#ffffff;font-family:lato;font-weight: 700;margin-top:30px;font-size:29px;}
-#heroStage {width:100%;height:310px;}
+#heroStage {width:100%;height:360px;}
 #hero-content p {text-align:center;}
-#call-to-action-btn {display:none;background:#0dc3ff;border:none;font-family:lato;font-weight: 700;font-size:31px;font-weight:bold;color:#ffffff;padding:28px 50px;
+#call-to-action-btn {display:none;background:#0dc3ff;border:none;font-family:lato;font-weight: 700;font-size:27px;font-weight:bold;color:#ffffff;padding:20px 40px;
     -webkit-border-radius: 6px;border-radius: 6px;
 	-webkit-box-shadow: 0px 6px 0px 0px #05ace5, 0px 1px 9px 2px rgba(13, 0, 0, 0.1);
 	box-shadow: 0px 6px 0px 0px #05ace5;text-shadow: 0px -1px 0px rgba(0,0,0,.5), 0px 1px 9px 2px rgba(13, 0, 0, 0.1);
@@ -108,6 +121,8 @@ box-shadow: inset 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
    -o-transition: all 0.3s linear;
    transition: all 0.3s linear;
 }
+#cta-body {min-height:200px;background:#043a63;border-top:0px!important;-webkit-border-radius: 13px;
+border-radius: 13px;}
 
 // Quotes
 #quotes-container {height:100px;background: url(/assets/customer_logos.png) no-repeat center #043a63;background-size:auto 70px;-webkit-box-shadow: inset 0px 0px 18px 2px rgba(0, 0, 0, 0.7);
@@ -153,9 +168,12 @@ box-shadow: inset 0px 0px 18px 2px rgba(0, 0, 0, 0.7);}
 
 // Service Areas
 #service-areas-header {margin-top:110px;height:170px;background: url(/assets/service_areas_bg.jpg) repeat scroll 0 0;background-size:100%;-webkit-box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.8);box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.8);}
-#service-areas-container {min-height:300px;padding:20px;margin-top:140px;background:rgba(6,67,108,0.6);-webkit-border-radius: 9px;border-radius: 9px;}
+#service-areas-container {min-height:300px;padding:20px 20px 20px 20px;margin-top:140px;background:rgba(6,67,108,0.6);-webkit-border-radius: 9px;border-radius: 9px; -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3); box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3);}
 #service-areas-container h2 {color:#fff;}
 #service-areas-container h4 {font-weight:400;}
+#service-results {min-height:100px;width:100%;margin:15px auto 0 auto;background: #053c66;
+-webkit-box-shadow: inset 0px -1px 5px 1px rgba(0, 0, 0, 0.3);box-shadow: inset 0px -1px 5px 1px rgba(0, 0, 0, 0.3);-webkit-border-radius: 9px;border-radius: 9px;}
+#service-results tbody {margin:0 auto; }
 
 // Partner Program
 #partner-program-header {margin-top:110px;height:170px;background: url(/assets/partner_program_bg.jpg) repeat scroll 0 0;background-size:100%;-webkit-box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.8);box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.8);}
@@ -174,6 +192,7 @@ box-shadow: inset 0px 0px 18px 2px rgba(0, 0, 0, 0.7);}
 .service-description-text {height:150px;}
 #admin-menu-list {list-style-type:none;}
 #admin-menu-list a, #admin-menu-list a:visited {color:rgba(5, 64, 105, 0.6)}
+#cta-results-container {min-height:200px;width:100%;}
 
 
 // CSS Animations
