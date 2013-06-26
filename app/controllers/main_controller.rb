@@ -13,6 +13,7 @@ class MainController < ApplicationController
 	end
 
 	def list_services
+		render :layout => 'get_service' 
 	end
 
 	def show_services

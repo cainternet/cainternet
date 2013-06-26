@@ -2,7 +2,7 @@
 @import "bootstrap-responsive";
 @import "font-awesome";
 
-body { padding:0px 0px 80px 0px;font-family:lato;font-weight: 400;background:#e8ebef!important; }
+body { padding:0px 0px 80px 0px;font-family:lato;font-weight: 400;background:#e8ebef; }
 .container-fluid {padding:0px;}
 html, p, h1, h2, h3, h4, h5, h6 {color:#fff;font-weight:700;}
 a, a:visited {color:#7fdeff}
@@ -171,13 +171,14 @@ border-radius: 13px;}
 #about-team img {float:none;border:none;max-height:80px;margin:0px auto;}
 
 // Service Areas
-#service-areas-header {margin-top:110px;height:170px;background: url(/assets/service_areas_bg.jpg) repeat scroll 0 0;background-size:100%;-webkit-box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.8);box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.8);}
-#service-areas-container {min-height:300px;padding:20px 20px 20px 20px;margin-top:140px;background:rgba(6,67,108,0.6);-webkit-border-radius: 9px;border-radius: 9px; -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3); box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3);}
+#service-areas-header {margin-top:110px;height:170px;background: url(/assets/service_areas_bg.jpg) repeat scroll 0 0;background-size:100%;}
+#service-areas-container {min-height:300px;padding:30px 20px 30px 20px;margin-top:15px;background:rgba(6,67,108,0.6);-webkit-border-radius: 0px;border-radius: 0px;-webkit-border-radius: 6px;border-radius: 6px;}
 #service-areas-container h2 {color:#fff;}
 #service-areas-container h4 {font-weight:400;}
 #service-results {min-height:100px;width:100%;margin:15px auto 0 auto;background: #053c66;
--webkit-box-shadow: inset 0px -1px 5px 1px rgba(0, 0, 0, 0.3);box-shadow: inset 0px -1px 5px 1px rgba(0, 0, 0, 0.3);-webkit-border-radius: 9px;border-radius: 9px;}
+-webkit-box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);-webkit-border-radius:0px;border-radius: 0px;}
 #service-results tbody {margin:0 auto; }
+#cta-city {-webkit-border-radius:0px;border-radius:0px;min-width:250px;}
 
 // Partner Program
 #partner-program-header {margin-top:110px;height:170px;background: url(/assets/partner_program_bg.jpg) repeat scroll 0 0;background-size:100%;-webkit-box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.8);box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.8);}
