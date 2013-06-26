@@ -9,6 +9,9 @@ class MainController < ApplicationController
 	def about
 	end
 
+	def business
+	end
+
 	def list_services
 	end
 
