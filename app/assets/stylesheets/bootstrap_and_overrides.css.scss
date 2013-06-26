@@ -85,14 +85,7 @@ box-shadow: inset 0px -1px 5px 1px rgba(0, 0, 0, 0.3);}
 #top-nav {}
 #top-nav a {font-size:13px;line-height:17px;color:#08c0ff;text-shadow:none;}
 #bottom-nav-container { height:75px;width:100%;
-	background: #438cdb; /* Old browsers */
-	background: -moz-linear-gradient(top,  #438cdb 0%, #346eb2 1%, #438cdb 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#438cdb), color-stop(1%,#346eb2), color-stop(100%,#438cdb)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #438cdb 0%,#346eb2 1%,#438cdb 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #438cdb 0%,#346eb2 1%,#438cdb 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #438cdb 0%,#346eb2 1%,#438cdb 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #438cdb 0%,#346eb2 1%,#438cdb 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#438cdb', endColorstr='#438cdb',GradientType=0 ); /* IE6-9 */
+	background: #438cdb;
 }
 #bottom-nav-container ul {margin-top:15px;}
 #bottom-nav-container a { color:#ffffff;font-size:17px;text-shadow:none;letter-spacing:0.5px;font-weight:400!important; }
