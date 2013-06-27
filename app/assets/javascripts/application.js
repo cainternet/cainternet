@@ -16,6 +16,8 @@
 //= require backbone
 //= require california_internet
 //= require bootstrap-modal
+//= require bootstrap-transition
+//= require bootstrap-carousel
 //= require bootstrap-tooltip
 //= require bootstrap-popover
 //= require jquery.cycle.lite

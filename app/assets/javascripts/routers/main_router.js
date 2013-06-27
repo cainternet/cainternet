@@ -1,9 +1,10 @@
 CaliforniaInternet.Routers.Main = Backbone.Router.extend({
 	
 	routes: {
-    	"":                              "home",
+    	"":                              "homePage",
       "getservice":                    "getService",
-      "management/county/:county":     "adminCountyCities"
+      "management/county/:county":     "adminCountyCities",
+      "business":                      "businessPage"
     },
 
     initialize: function() {
@@ -11,7 +12,7 @@ CaliforniaInternet.Routers.Main = Backbone.Router.extend({
 
     }, // End of initialize
 
-    home: function() {
+    homePage: function() {
 
       var homeView = new CaliforniaInternet.Views.HomeView({})
       $('#hero-content-container').html(homeView.render().$el);
@@ -31,6 +32,11 @@ CaliforniaInternet.Routers.Main = Backbone.Router.extend({
       $('#quotes-slider').cycle({fx:'fade'});
 
     }, // END home
+
+    businessPage: function() {
+      var businessPageView = new CaliforniaInternet.Views.BusinessPage({})
+      $('#business-services-container').html(businessPageView.render().$el);
+    },
 
     getService: function() {
       var serviceView = new CaliforniaInternet.Views.ServiceView({})
