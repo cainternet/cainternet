@@ -15,11 +15,7 @@
 //= require underscore
 //= require backbone
 //= require california_internet
-//= require bootstrap-transition
-//= require bootstrap-modal
-//= require bootstrap-carousel
-//= require bootstrap-tooltip
-//= require bootstrap-popover
+//= require bootstrap
 //= require jquery.cycle.lite
 //= require_tree ../templates
 //= require_tree ./models
