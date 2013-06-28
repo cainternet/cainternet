@@ -12,6 +12,9 @@ class MainController < ApplicationController
 	def business
 	end
 
+	def residential
+	end
+
 	def list_services
 		render :layout => 'get_service' 
 	end

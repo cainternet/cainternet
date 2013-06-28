@@ -15,8 +15,8 @@
 //= require underscore
 //= require backbone
 //= require california_internet
-//= require bootstrap-modal
 //= require bootstrap-transition
+//= require bootstrap-modal
 //= require bootstrap-carousel
 //= require bootstrap-tooltip
 //= require bootstrap-popover

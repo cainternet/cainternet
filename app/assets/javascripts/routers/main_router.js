@@ -4,7 +4,8 @@ CaliforniaInternet.Routers.Main = Backbone.Router.extend({
     	"":                              "homePage",
       "getservice":                    "getService",
       "management/county/:county":     "adminCountyCities",
-      "business":                      "businessPage"
+      "business":                      "businessPage",
+      "residential":                   "residentialPage"
     },
 
     initialize: function() {
@@ -36,6 +37,11 @@ CaliforniaInternet.Routers.Main = Backbone.Router.extend({
     businessPage: function() {
       var businessPageView = new CaliforniaInternet.Views.BusinessPage({})
       $('#business-services-container').html(businessPageView.render().$el);
+    },
+
+    residentialPage: function() {
+      var residentialPageView = new CaliforniaInternet.Views.ResidentialPage({})
+      $('#residential-services-container').html(residentialPageView.render().$el);
     },
 
     getService: function() {

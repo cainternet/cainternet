@@ -5,7 +5,7 @@
 body { padding:0px 0px 80px 0px;font-family:lato;font-weight: 400;background:#e8ebef; }
 .container-fluid {padding:0px;}
 html, p, h1, h2, h3, h4, h5, h6 {color:#fff;font-weight:700;}
-a, a:visited {color:#438cdb}
+a, a:visited, a:active {color:#438cdb}
 a:hover {text-decoration:none;color:#59a9ff;}
 .table td, .table th {border:none;}
 ul {margin:0px;}
@@ -41,7 +41,7 @@ hr {border-bottom:none;max-width:60%;opacity:0.5;margin:0px auto;}
 .c-blue {color:#7fdeff;}
 .c-dark-blue {color:#438cdb}
 .c-black {color:#777777;}
-.c-white-page {min-height:400px;background:#ffffff;padding:20px 20px 60px 20px;-webkit-box-shadow:  0px 0px 2px 1px #cccccc;box-shadow:  0px 0px 2px 1px #cccccc;}
+.c-white-page {min-height:400px;background:#ffffff;padding:20px 20px 20px 20px;-webkit-box-shadow:  0px 0px 2px 1px #cccccc;box-shadow:  0px 0px 2px 1px #cccccc;}
 .c-btn {background:#0dc3ff;border:none;font-family:lato;font-weight: 400;font-size:16px;color:#ffffff!important;padding:9px 24px;
     -webkit-border-radius: 6px;border-radius: 6px;
 	-webkit-box-shadow: 0px 4px 0px 0px #05ace5, 0px 1px 9px 2px rgba(13, 0, 0, 0.1);
@@ -151,6 +151,7 @@ border-radius: 13px;}
 .info-image {}
 .img-bg {display:block;height:180px;width:180px;background-color: #0dc3ff;}
 .home-icon {}
+.img-bg-small {height:60px;width:60px;background-color: #0dc3ff;}
 
 // Customers
 #customers-header {margin-top:110px;height:170px;background: url(/assets/customers_bg.jpg) repeat scroll 0 0;background-size:100%;-webkit-box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.8);box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.8);}
@@ -179,11 +180,21 @@ border-radius: 13px;}
 #partner-program-container {min-height:500px;padding:20px;margin-top:20px;background:rgba(6,67,108,0.6);-webkit-border-radius: 9px;border-radius: 9px;}
 
 // Business Services Page
-#business-services-container {}
+#business-services-container {margin-top:130px;}
 #business-list {min-height:400px;}
 #business-list p {font-size:13px;color:#555;padding-left:20px;margin-top:15px;}
 #business-list ul {margin-top:10px;padding-left:20px;}
 #business-list ul li {font-size:20px;font-weight:400;margin-bottom:10px;}
+#business-carousel .item {min-height:300px;}
+
+// Residential Services Page
+#residential-services-container {margin-top:130px;}
+#residential-list {min-height:400px;}
+#residential-list p {font-size:13px;color:#555;padding-left:20px;margin-top:15px;}
+#residential-list ul {margin-top:10px;padding-left:20px;}
+#residential-list ul li {font-size:20px;font-weight:400;margin-bottom:10px;}
+#residential-carousel .item {min-height:300px;}
+
 
 // Support Modal
 #supportModal {border:0px;}
