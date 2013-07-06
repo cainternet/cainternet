@@ -1,6 +1,6 @@
 CaliforniaInternet.Views.PartnerModal = Backbone.View.extend({
 	
-	el: "#partnerModal",
+	el: "#partner-program-container",
 
 	initialize: function() {
 		_.bindAll(this);
@@ -11,9 +11,8 @@ CaliforniaInternet.Views.PartnerModal = Backbone.View.extend({
     },
 
     showModalForm: function() {
-		$('#partnerModal').modal({
-            show: true
-        })
+    	console.log("clicked")
+    	$('#partnerModal').fadeIn(200);
     },
 
 	render: function () {

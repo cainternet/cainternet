@@ -31,6 +31,17 @@ hr {border-bottom:none;max-width:60%;opacity:0.5;margin:0px auto;}
 .modal-footer {background:#043a63;border:none!important;margin-top:-2px;}
 .modal-body hr {border:1px solid #fff;margin:5px auto;width:60%;color:#a3e8ff!important;}
 
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
 // Re-Useable Styles
 #notice {color:#a6ffcc;}
 .c-font {font-family:lato;font-weight:400;}
@@ -171,6 +182,7 @@ border-radius: 13px;}
 // Partner Program
 #partner-program-container {margin-top:130px;}
 #partner-program-header {margin-top:110px;height:170px;background: url(/assets/about_bg.jpg) repeat scroll 0 0;background-size:100%;-webkit-box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.8);box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.8);}
+#partnerModal {}
 
 
 // Service Areas
