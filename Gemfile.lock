@@ -50,6 +50,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
+    country-select (1.1.1)
     daemons (1.1.9)
     debug_inspector (0.0.2)
     eco (1.0.0)
@@ -142,6 +143,7 @@ DEPENDENCIES
   binding_of_caller (>= 0.6.8)
   bootstrap-sass (>= 2.2.2.0)
   coffee-rails (~> 3.2.1)
+  country-select
   figaro
   font-awesome-rails
   google-webfonts

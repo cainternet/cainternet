@@ -18,6 +18,7 @@ CaliforniaInternet::Application.routes.draw do
   match 'about', to: 'main#about'
   match 'business', to: 'main#business'
   match 'residential', to: 'main#residential'
+  resources :resellers
   root :to => 'main#index'
 
 end

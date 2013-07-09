@@ -1,0 +1,41 @@
+<div id="body-container" class="row-fluid">
+	<div id="site-container" class="span12">
+			
+		<div class="row-fluid">
+			<div id="partner-program-container" class="offset2 span8 c-white-page" style="padding:30px 80px;">
+
+						<div class="row-fluid">
+							<div class="span12">
+								<h3 class="c-centered" style="color:#444444;margin:10px 0px 0px 0px;">Reseller Application</h3>
+								<p style="color:#aaaaaa;font-size:12px;text-align:center;">We just need a bit of information about your business and we will contact you within 24 hours.</p>
+								<hr style="border:1px dashed #438cdb;opacity:0.2;margin:5px auto 20px auto;max-width:500px;">
+								<%= form_for @reseller, url: {action: "create"}, html: {id: "reseller-form", class: "c-centered", style: "background:#f6f6f6;padding:20px 0px"} do |f| %>
+								  <p class="reseller-form-label c-centered" style="margin-bottom:0px;">Full Name</p>
+								  <%= f.text_field :full_name %>
+								  <p class="reseller-form-label c-centered" style="margin-bottom:0px;">Company Name</p>
+								  <%= f.text_field :company_name %>
+								  <p class="reseller-form-label c-centered" style="margin-bottom:0px;">Company Website</p>
+								  <%= f.text_field :website %>
+								  <p class="reseller-form-label c-centered" style="margin-bottom:0px;">Phone Number</p>
+								  <%= f.text_field :phone %>
+								  <p class="reseller-form-label c-centered" style="margin-bottom:0px;">Email</p>
+								  <%= f.text_field :email %>
+								  <p class="reseller-form-label c-centered" style="margin-bottom:0px;">Company Type</p>
+								  <%= f.text_field :company_type, :placeholder => 'Example: Internet Service Provider' %>
+								  <p class="reseller-form-label c-centered" style="margin-bottom:0px;">Company Address</p>
+								  <%= f.text_field :address_street, :placeholder => 'Street' %>
+								  <%= f.text_field :address_city, :placeholder => 'City' %>
+								  <%= f.text_field :address_zip, :placeholder => 'Postal Code' %>
+								  <%= select_tag :state, options_for_select(us_states) %>
+								  <p><%= f.submit "Create", :class => 'c-centered btn c-btn-flat' %></p>
+								<% end %>
+							</div>
+						</div>
+
+			</div> <!-- #partner-program-container -->
+		</div> <!-- row-fluid -->
+
+	</div>	<!-- site-container -->
+</div> <!-- body-container -->
+
+

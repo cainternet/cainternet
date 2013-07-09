@@ -33,4 +33,22 @@ class MainController < ApplicationController
 	def partner_program
 	end
 
+	def partner_program_form
+		@reseller = Reseller.new
+	end
+
+	def reseller_create
+		@reseller = Reseller.new(params[:test])
+
+		respond_to do |format|
+	      if @reseller.save
+	        format.html { redirect_to '/partner_program', notice: 'Reseller was successfully created.' }
+	      else
+	        format.html { render action: "new" }
+	      end
+	    end
+	    
+	end
+
+
 end

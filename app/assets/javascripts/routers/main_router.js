@@ -6,7 +6,8 @@ CaliforniaInternet.Routers.Main = Backbone.Router.extend({
       "management/county/:county":     "adminCountyCities",
       "business":                      "businessPage",
       "residential":                   "residentialPage",
-      "partner":                       "partnerPage"
+      "partner":                       "partnerPage",
+      "resellers/new":                 "resellerFormView"
     },
 
     initialize: function() {
@@ -52,6 +53,10 @@ CaliforniaInternet.Routers.Main = Backbone.Router.extend({
 
     partnerPage: function() {
       var partnerModal = new CaliforniaInternet.Views.PartnerModal({})
+    },
+
+    resellerFormView: function() {
+      var resellersView = new CaliforniaInternet.Views.ResellersFormView();
     },
 
     adminCountyCities: function() {

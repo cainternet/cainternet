@@ -4,7 +4,7 @@
 
 body { padding:0px 0px 80px 0px;font-family:lato;font-weight: 400;background:#e8ebef; }
 .container-fluid {padding:0px;}
-html, p, h1, h2, h3, h4, h5, h6 {color:#fff;font-weight:700;}
+html, p, h1, h2, h3, h4, h5, h6 {color:#444444;font-weight:700;}
 a, a:visited, a:active {color:#438cdb}
 a:hover {text-decoration:none;color:#59a9ff;}
 .table td, .table th {border:none;}
@@ -24,23 +24,13 @@ hr {border-bottom:none;max-width:60%;opacity:0.5;margin:0px auto;}
 }
 
 // Modal Styles
-.modal {-webkit-border-radius: 13px;border-radius: 13px}
+.modal {}
 .modal-backdrop {background:#032035;opacity:0.9!important}
-.modal-header {background:#438cdb;-webkit-border-radius: 9px 9px 0px 0px;border-radius: 9px 9px 0px 0px;text-align:center;color:#fff;font-family:lato;font-weight: 400;border:none;}
+.modal-header {background:#438cdb;text-align:center;color:#fff;font-family:lato;font-weight: 400;border:none;}
 .modal-body {background:#438cdb;border:none;min-height:130px;}
-.modal-footer {background:#043a63;border:none!important;margin-top:-2px;}
+.modal-footer {background:#043a63;border:none!important;margin-top:-2px;-webkit-border-radius: 0px;border-radius: 0px;}
 .modal-body hr {border:1px solid #fff;margin:5px auto;width:60%;color:#a3e8ff!important;}
-
-#lean_overlay {
-    position: fixed;
-    z-index:100;
-    top: 0px;
-    left: 0px;
-    height:100%;
-    width:100%;
-    background: #000;
-    display: none;
-}
+.modal-form-container {background:#fff;width:90%;margin:0 auto;-webkit-box-shadow:  0px 0px 2px 1px #999;box-shadow:  0px 0px 2px 1px f;}
 
 // Re-Useable Styles
 #notice {color:#a6ffcc;}
@@ -182,8 +172,7 @@ border-radius: 13px;}
 // Partner Program
 #partner-program-container {margin-top:130px;}
 #partner-program-header {margin-top:110px;height:170px;background: url(/assets/about_bg.jpg) repeat scroll 0 0;background-size:100%;-webkit-box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.8);box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.8);}
-#partnerModal {}
-
+#reseller-form {max-width:400px;margin:0 auto;}
 
 // Service Areas
 #service-areas-header {margin-top:110px;height:170px;background: url(/assets/service_areas_bg.jpg) repeat scroll 0 0;background-size:100%;}

@@ -29,6 +29,7 @@ gem 'backbone-on-rails'
 gem 'figaro'
 gem 'google-webfonts'
 gem 'font-awesome-rails'
+gem 'country-select'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
