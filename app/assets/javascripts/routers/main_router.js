@@ -7,11 +7,21 @@ CaliforniaInternet.Routers.Main = Backbone.Router.extend({
       "business":                      "businessPage",
       "residential":                   "residentialPage",
       "partner":                       "partnerPage",
-      "resellers/new":                 "resellerFormView"
+      "resellers/new":                 "resellerFormView",
+      "customers":                     "customersPage"
     },
 
     initialize: function() {
       _.bindAll(this);
+
+      // Event Listener for Support Link
+      $("#support-link").click(function() {
+          $('#supportModal').modal({
+            show: true
+          })
+          var supportModal = new CaliforniaInternet.Views.SupportModal({})
+          $('#supportModal').html(supportModal.render().$el);
+      });
 
     }, // End of initialize
 
@@ -53,6 +63,9 @@ CaliforniaInternet.Routers.Main = Backbone.Router.extend({
 
     partnerPage: function() {
       var partnerModal = new CaliforniaInternet.Views.PartnerModal({})
+    },
+
+    customers: function() {
     },
 
     resellerFormView: function() {

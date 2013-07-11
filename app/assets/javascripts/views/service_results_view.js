@@ -7,14 +7,19 @@ CaliforniaInternet.Views.ServiceResultsView = Backbone.View.extend({
 
 	initialize: function() {
 		_.bindAll(this);
-		
 	},
 
 	events: {
+		"click #cta-order-btn"                       :   "openOrderBox"
+    },
+
+    openOrderBox: function() {
+    	var city = $('#cta-city').val();
+    	var orderBoxView = new CaliforniaInternet.Views.OrderBoxView({ city: city })
+      	$('#service-areas-container').html(orderBoxView.render().$el);
     },
 
 	render: function () {
-		console.log(this.collection);
 		this.$el.html(this.template({ collection: this.collection }));
 		return this;
 	}

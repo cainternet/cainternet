@@ -10,14 +10,13 @@ CaliforniaInternet.Views.ServiceView = Backbone.View.extend({
 	},
 
 	events: {
-		"keyup #cta-city"                     :   "searchCities",
-        "keypress #cta-city"                  :   "searchCities"
+		"keyup #cta-city"                       :   "searchCities",
+        "keypress #cta-city"                    :   "searchCities"
     },
 
     searchCities: function(e) {
     	var city = $(e.currentTarget).val();
     	var city = city.toLowerCase()
-    	console.log(city);
     	var cityServices = new CaliforniaInternet.Collections.CityServices();
       	cityServices.fetch({
       		data: { city_name: city },
@@ -26,7 +25,7 @@ CaliforniaInternet.Views.ServiceView = Backbone.View.extend({
       			var results = response.toJSON();
       			console.log(results[0].error)
       			if (results[0].error) {
-
+      				$('#service-results').html('<tbody><tr></tr><tr><td class="c-centered" style="margin-top:30px;opacity:0.8">Nothing found yet, keep typing...</td></tr></tbody>');
       			} else {
       				var resultsView = new CaliforniaInternet.Views.ServiceResultsView({ collection: results })
       				$('#service-results').html(resultsView.render().$el);
@@ -38,9 +37,9 @@ CaliforniaInternet.Views.ServiceView = Backbone.View.extend({
 		    //     $('#swipe-wrap').append(dealSlide.render().$el);
 			// });
 
-
 			} // End Success
 		}); // End fetch
+
     }, // End searchCities
 
 	render: function () {
