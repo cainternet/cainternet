@@ -10,11 +10,10 @@ CaliforniaInternet.Views.OrderBoxView = Backbone.View.extend({
 	},
 
 	events: {
-
     },
 
 	render: function () {
-		this.$el.html(this.template({ city: this.options.city }));
+		this.$el.html(this.template({ city: this.options.city, services: this.options.services }));
 		return this;
 	}
 

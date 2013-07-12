@@ -66,6 +66,7 @@ CaliforniaInternet.Routers.Main = Backbone.Router.extend({
     },
 
     customers: function() {
+      
     },
 
     resellerFormView: function() {
