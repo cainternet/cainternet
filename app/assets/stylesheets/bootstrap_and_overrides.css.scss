@@ -48,6 +48,7 @@ hr {border-bottom:none;max-width:60%;opacity:0.5;margin:0px auto;}
 .c-grey {color:#777777;}
 .c-white-page {min-height:400px;background:#ffffff;padding:20px 20px 20px 20px;-webkit-box-shadow:  0px 0px 2px 1px #cccccc;box-shadow:  0px 0px 2px 1px #cccccc;}
 .c-box-shadow {-webkit-box-shadow:  0px 0px 2px 1px #cccccc;box-shadow:  0px 0px 2px 1px #cccccc;}
+.c-box-shadow-black {-webkit-box-shadow:  0px 2px 0px 0px rgba(0, 0, 0, 0.3)!important;box-shadow:  0px 2px 0px 0px rgba(0, 0, 0, 0.3)!important;}
 .c-btn {background:#0dc3ff;border:none;font-family:lato;font-weight: 400;font-size:16px;color:#ffffff!important;padding:9px 24px;
     -webkit-border-radius: 6px;border-radius: 6px;
 	-webkit-box-shadow: 0px 4px 0px 0px #05ace5, 0px 1px 9px 2px rgba(13, 0, 0, 0.1);
@@ -181,7 +182,7 @@ border-radius: 13px;}
 
 // Service Areas
 #service-areas-header {margin-top:110px;height:170px;background: url(/assets/service_areas_bg.jpg) repeat scroll 0 0;background-size:100%;}
-#service-areas-container {min-height:300px;padding:20px 20px 30px 20px;margin-top:15px;background:rgba(6,67,108,0.6);-webkit-border-radius: 0px;border-radius: 0px;-webkit-border-radius: 0px;border-radius: 0px;}
+#service-areas-container {min-height:200px;-webkit-border-radius: 0px;border-radius: 0px;-webkit-border-radius: 0px;border-radius: 0px;}
 #service-areas-container h2 {color:#fff;}
 #service-areas-container h4 {font-weight:400;}
 #service-results {min-height:100px;width:100%;margin:15px auto 0 auto;background: #053c66;
@@ -190,7 +191,9 @@ border-radius: 13px;}
 #cta-city, #cta-street {-webkit-border-radius:0px;border-radius:0px;min-width:250px;}
 #order-form {margin-bottom:0px;}
 #order-form input { width:100%;max-width:300px;-webkit-border-radius:0px;border-radius:0px;}
+#service-listing {font-size:18px;}
 #service-listing:hover {cursor:pointer;}
+#order-sheet {background: #053c66;-webkit-box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);-webkit-border-radius:0px;border-radius: 0px;padding: 20px 0px;max-width:450px;margin:0px auto;}
 
 // Business Services Page
 #business-services-container {margin-top:130px;}
@@ -207,7 +210,6 @@ border-radius: 13px;}
 #residential-list ul {margin-top:10px;padding-left:20px;}
 #residential-list ul li {font-size:20px;font-weight:400;margin-bottom:10px;}
 #residential-carousel .item {min-height:300px;}
-
 
 // Support Modal
 #supportModal {border:0px;}

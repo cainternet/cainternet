@@ -7,6 +7,7 @@ CaliforniaInternet.Views.OrderBoxView = Backbone.View.extend({
 
 	initialize: function() {
 		_.bindAll(this);
+		$("#service-areas-container").css({'background':'transparent','padding':'0px','margin-top':'0px'})
 	},
 
 	events: {

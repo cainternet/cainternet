@@ -1,17 +1,24 @@
 <div id="body-container" class="row-fluid">
-	<div id="site-container" class="span12">
+	<div id="site-container" class="span12" style="min-height:700px!important;background: #4da7d1; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #4da7d1 0%, #3a73b4 80%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#4da7d1), color-stop(80%,#3a73b4)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #4da7d1 0%,#3a73b4 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #4da7d1 0%,#3a73b4 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #4da7d1 0%,#3a73b4 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #4da7d1 0%,#3a73b4 65%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4da7d1', endColorstr='#3a73b4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */">
 			
 		<div class="row-fluid">
 			<div  class="span12">
 				<div class="row-fluid" style="margin-top:50px;">
-					<center><%= image_tag("logo_shadow.png", :alt => 'California Internet', :id => 'logo', :draggable => false, :style => 'max-width:220px;' ) %></center>
+					<center><%= image_tag("logo_shadow.png", :alt => 'California Internet', :id => 'logo', :draggable => false, :style => 'max-width:170px;' ) %></center>
 					<h2 class="c-centered c-text-shadow" style="margin-bottom:10px;margin-top:5px;font-size:33px;">Get Service Now</h2>
 						<div class="row-fluid">
 							<div id="service-areas-container" class="offset3 span6">
 							</div>
 						</div> <!-- row-fluid -->
 						<div class="row-fluid">
-							<p class="c-centered" style="font-size:16px;margin-top:10px;"><%= link_to "Back to Main Site", :back, :class => 'c-blue c-text-shadow', :style => 'font-weight:400;color:#7fdeff!important;' %></p>
+							<p class="c-centered" style="font-size:16px;margin-top:10px;"><%= link_to "Back to Main Site", :back, :class => 'c-white c-text-shadow', :style => 'font-weight:400;color:#fff!important;' %></p>
 						</div>
 					</div>
 				</div> <!-- row-fluid -->

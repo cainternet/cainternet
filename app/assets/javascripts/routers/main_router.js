@@ -59,6 +59,7 @@ CaliforniaInternet.Routers.Main = Backbone.Router.extend({
     getService: function() {
       var serviceView = new CaliforniaInternet.Views.ServiceView({})
       $('#service-areas-container').html(serviceView.render().$el);
+      $('body').css({'background-color':'#000000!important'});
     }, // END service
 
     partnerPage: function() {
@@ -66,7 +67,7 @@ CaliforniaInternet.Routers.Main = Backbone.Router.extend({
     },
 
     customers: function() {
-      
+
     },
 
     resellerFormView: function() {
