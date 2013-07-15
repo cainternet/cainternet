@@ -194,6 +194,8 @@ border-radius: 13px;}
 #service-listing {font-size:18px;}
 #service-listing:hover {cursor:pointer;}
 #order-sheet {background: #053c66;-webkit-box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);-webkit-border-radius:0px;border-radius: 0px;padding: 20px 0px;max-width:450px;margin:0px auto;}
+#out-of-state-link {opacity:0.7}
+#out-of-state-link:hover {opacity:1;cursor:pointer;}
 
 // Business Services Page
 #business-services-container {margin-top:130px;}

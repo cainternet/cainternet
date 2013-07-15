@@ -9,6 +9,7 @@ CaliforniaInternet.Views.HomeView = Backbone.View.extend({
 		_.bindAll(this);
 		// Pan Image Background
 		this.panBackground();
+        this.heroAnimation();
 		// Set up Manual Event Binding for Window
 		$(window).scroll(this.detect_scroll);
 	},
@@ -30,6 +31,10 @@ CaliforniaInternet.Views.HomeView = Backbone.View.extend({
 		    pos++;
 		    $("#hero").css({backgroundPosition: (pos * -1.2) + "px 0px"});
 		}
+    },
+
+    heroAnimation: function() {
+
     },
 
     detect_scroll: function() {
