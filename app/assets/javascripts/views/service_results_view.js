@@ -10,8 +10,7 @@ CaliforniaInternet.Views.ServiceResultsView = Backbone.View.extend({
 	},
 
 	events: {
-		"click #cta-order-btn"                       :   "openOrderBox",
-		"click .service-listing"                     :   "selectService"
+		"click #cta-order-btn"                       :   "openOrderBox"
     },
 
     openOrderBox: function() {
@@ -32,18 +31,6 @@ CaliforniaInternet.Views.ServiceResultsView = Backbone.View.extend({
 	      	};
     },
 
-    selectService: function(e) {
-    	if ($(e.currentTarget).hasClass('c-blue')) {
-    		$(e.currentTarget).removeClass('c-blue');
-    		$(e.currentTarget).addClass('c-green');
-    		$(e.currentTarget).addClass('selected');
-    	} else {
-    		$(e.currentTarget).removeClass('c-green');
-    		$(e.currentTarget).addClass('c-blue');
-    		$(e.currentTarget).removeClass('selected');
-    	}
-    	var serviceName = $(e.currentTarget).children('#service-name').text();
-    },
 
 	render: function () {
 		this.$el.html(this.template({ collection: this.collection }));

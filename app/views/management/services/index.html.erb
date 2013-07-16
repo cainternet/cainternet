@@ -1,7 +1,7 @@
 <div class="row-fluid">
   <div id="services-container" class="offset2 span8">
 
-        <h3 class="c-centered">Available Services</h3>
+        <h3 class="c-centered" style="color:#555555;">Available Services</h3>
         <hr style="margin: 8px auto;">
         <table class="table table-condensed c-centered">
           <tr>
@@ -10,9 +10,9 @@
 
         <% @services.each do |service| %>
           <tr>
-            <td colspan="3" class="c-white c-centered">
+            <td colspan="3" class="c-centered">
               <%= link_to [:management, service] do %>
-                <h4 class="c-centered" style="margin-bottom:0px;"><%= service.service %></h4>
+                <h4 class="c-centered" style="margin-bottom:0px;color:#555555;"><%= service.service %></h4>
               <% end %>
             </td>
           </tr>

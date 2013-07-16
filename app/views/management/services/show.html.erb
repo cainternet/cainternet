@@ -1,9 +1,13 @@
 <div class="row-fluid">
   <div id="services-container" class="offset2 span8">
 
-		<p id="notice" class="c-centered"><%= notice %></p>
+		<p id="notice" class="c-centered" style="color:#58c34c;"><%= notice %></p>
 
-		<h3 class="c-centered c-white"><%= @service.service %></h3>
+		<h3 class="c-centered c-black"><%= @service.service %></h3>
+		<p class='c-centered c-dark-blue'>Service Type:</p>
+		<h5 class="c-centered c-black"><%= @service.service_type %></h5>
+		<p class='c-centered c-dark-blue'>Service Details:</p>
+		<h5 class="c-centered c-black"><%= @service.details %></h5>
 
 		<center><%= link_to 'Edit', edit_management_service_path(@service) %> <span class="c-blue"> |</span>
 		<%= link_to 'Back', management_services_path %></center>
