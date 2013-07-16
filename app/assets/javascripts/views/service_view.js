@@ -10,8 +10,7 @@ CaliforniaInternet.Views.ServiceView = Backbone.View.extend({
 	},
 
 	events: {
-		"keyup #cta-city"                       :   "searchCities",
-        "keypress #cta-city"                    :   "searchCities"
+		"keyup #cta-city"                       :   "searchCities"
     },
 
     searchCities: function(e) {
