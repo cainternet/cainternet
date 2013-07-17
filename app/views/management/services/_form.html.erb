@@ -12,7 +12,7 @@
   <% end %>
 
   <%= f.text_field :service, :placeholder => "Service Title", :style => 'text-align:center;', :maxlength => 200 %><br/>
-  <%= f.select :service_type, [['Business', 'Business'], ['Residential', 'Residential'], ['All', 'All']] %><br/>
+  <%= f.select :service_type, [['Business', 'Business'], ['Residential', 'Residential'], ['Business and Residential', 'Business and Residential']] %><br/>
   <%= f.text_area :details, :placeholder => "Service Details", :style => 'height:200px;', :maxlength => 230 %><br/>
 
   <p style="font-size:11px;text-align:center;color:#555555;margin-top:0px;padding-top:0px;">Service Details - 230 Characters Max</p>

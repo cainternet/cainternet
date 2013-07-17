@@ -1,0 +1,13 @@
+<div class="modal-body">
+	<div id="service-modal-content" class="c-box-shadow-black" style="padding-bottom:10px;">
+    	<h3 class="c-centered c-dark-blue" style="padding-top:20px;"><%= model[0].service %></h3>
+    	<hr style="border-color:#aaaaaa;margin-bottom:15px;">
+    	<p class="c-centered c-dark-blue" style="font-size:14px;margin-bottom:3px;">Service Type:</p>
+    	<p class="c-centered" style="color:#555555;"><%= model[0].service_type %></p>
+    	<p class="c-centered c-dark-blue" style="font-size:14px;margin-bottom:3px;">Details:</p>
+    	<p class="c-centered" style="padding:0px 0px 0px 0px;color:#555555;"><%= model[0].details %></p>
+    </div>
+</div>
+<div class="modal-footer c-centered">
+	<button class="btn c-centered c-btn-flat" data-dismiss="modal" aria-hidden="true">Close</button>
+</div>

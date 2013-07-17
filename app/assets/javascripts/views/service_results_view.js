@@ -10,7 +10,8 @@ CaliforniaInternet.Views.ServiceResultsView = Backbone.View.extend({
 	},
 
 	events: {
-		"click #cta-order-btn"                       :   "openOrderBox"
+		"click #cta-order-btn"                       :   "openOrderBox",
+		"click #service-name"						 :   "openServiceModal"
     },
 
     openOrderBox: function() {
@@ -31,6 +32,27 @@ CaliforniaInternet.Views.ServiceResultsView = Backbone.View.extend({
 	      	};
     },
 
+    openServiceModal: function(e) {
+    	var serviceName = $(e.currentTarget).text();
+
+    	var service = new CaliforniaInternet.Models.Service();
+    	service.fetch({
+      		data: { service_name: serviceName },
+    		processData: true,
+      		success: function (response) {
+      			var results = response.toJSON();
+      			if (results[0].error) {
+      				console.log("nothing")
+      			} else {
+      				$('#serviceModal').modal({
+			            show: true
+			        })
+      				var serviceModalView = new CaliforniaInternet.Views.ServiceModal({ model: results }); 
+      				$('#serviceModal').html(serviceModalView.render().$el);
+      			}
+			} // End Success
+		}); // End fetch
+    },
 
 	render: function () {
 		this.$el.html(this.template({ collection: this.collection }));

@@ -30,13 +30,6 @@ CaliforniaInternet.Views.ServiceView = Backbone.View.extend({
       				var resultsView = new CaliforniaInternet.Views.ServiceResultsView({ collection: results })
       				$('#service-results').html(resultsView.render().$el);
       			}
-
-    		//  var deals = response.toJSON();
-		    // _.each(deals, function(deal) {
-		    // 	   var dealSlide = new WhiteDeals.Views.EditorSlide({ model: deal });
-		    //     $('#swipe-wrap').append(dealSlide.render().$el);
-			// });
-
 			} // End Success
 		}); // End fetch
 

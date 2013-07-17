@@ -30,6 +30,17 @@ class MainController < ApplicationController
       end
     end
 
+    def get_service_details
+    	@service_name = params[:service_name]
+
+    	if Service.exists?( :service => @service_name )
+        	@service = Service.where(:service => @service_name)
+        	render :json => @service
+      	else
+       		render :json => { :error => "No Service Found" }
+      	end
+    end
+
 	def partner_program
 	end
 
