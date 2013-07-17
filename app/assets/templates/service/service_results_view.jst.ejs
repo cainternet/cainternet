@@ -7,7 +7,7 @@
 <% _.each(collection, function(collection) { %>
 	<% if (collection.available == true) { %>
 		<tr>
-			<td id="service-listing" class="c-blue c-text-shadow service-listing" style="padding:0px 0px 8px 20%!important;"><input type="checkbox" style="margin-top:0px;">&nbsp; <span id="service-name"><%= collection.service %></span></td>
+			<td id="service-listing" class="c-blue c-text-shadow service-listing" style="padding:0px 0px 8px 20%!important;"><input type="checkbox" style="margin-top:0px;" data-service="<%= collection.service %>">&nbsp; <span id="service-name"><%= collection.service %></span></td>
 		</tr>
 	<% }; %>
 <% }); %>
