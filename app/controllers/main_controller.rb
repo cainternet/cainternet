@@ -23,8 +23,9 @@ class MainController < ApplicationController
       @city_name = params[:city_name]
       @city_name = @city_name.titleize
       if CityService.exists?( :city_name => @city_name )
-        @services= CityService.where(:city_name => @city_name)
-        render :json => @services
+        	@services = CityService.where(:city_name => @city_name).where(:available => true).map { |s| s.service }
+        	@services_and_details = Service.where(:service => @services)
+        	render :json => @services_and_details
       else
         render :json => { :error => "No City Found" }
       end

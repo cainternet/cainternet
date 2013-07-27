@@ -22,11 +22,10 @@ CaliforniaInternet.Views.ServiceView = Backbone.View.extend({
     		processData: true,
       		success: function (response) {
       			var results = response.toJSON();
-      			console.log(results[0].error)
+            console.log(results)
       			if (results[0].error) {
       				$('#service-results').html('<tbody><tr></tr><tr><td class="c-centered" style="margin-top:30px;opacity:0.8">Nothing found yet, keep typing...</td></tr></tbody>');
       			} else {
-      				console.log(response);
       				var resultsView = new CaliforniaInternet.Views.ServiceResultsView({ collection: results })
       				$('#service-results').html(resultsView.render().$el);
       			}

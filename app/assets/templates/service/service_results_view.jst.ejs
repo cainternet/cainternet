@@ -1,15 +1,23 @@
 <tr><th>
 	<h5 class="c-centered c-white" style="margin:10px auto 0px auto;font-weight:100;">Our Available Services in:</h5>
-	<h3 class="c-white c-centered c-text-shadow" style="margin:0px;"><%= collection[0].city_name %>, California</h3>
+	<h3 class="c-white c-centered c-text-shadow" style="margin:0px;text-transform:capitalize!important;"><%= $('#cta-city').val() %>, California</h3>
 	<h6 class="c-white c-centered" style="margin:0px;font-weight:100;">( Click a service for more information )</h6>
 </th></tr>
 
 <% _.each(collection, function(collection) { %>
-	<% if (collection.available == true) { %>
 		<tr>
-			<td id="service-listing" class="c-blue c-text-shadow service-listing" style="padding:0px 0px 8px 20%!important;"><input type="checkbox" style="margin-top:0px;" data-service="<%= collection.service %>">&nbsp; <span id="service-name"><%= collection.service %></span></td>
+			<td id="service-listing" class="c-blue c-text-shadow service-listing" style="padding:0px 0px 0px 20%!important;"><input type="checkbox" style="margin:0px 5px 0px 0px;" data-service="<%= collection.service %>">&nbsp; <span id="service-name"><%= collection.service %></span></td>
 		</tr>
-	<% }; %>
+		<tr>
+			<td style="padding:0px 0px 0px 25%!important;">
+				<p style="font-size:10px;margin-bottom:0px;" class="c-blue">Price: &nbsp; <span style="opacity:0.5;"><%= collection.price %></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding:0px 0px 8px 25%!important;">
+				<p style="font-size:10px;margin-bottom:0px;" class="c-blue">Speed: &nbsp; <span style="opacity:0.5;"><%= collection.speed %></span></p>
+			</td>
+		</tr>
 <% }); %>
 
 <tr><td><h5 class="c-centered c-white c-text-shadow" style="margin:0px 0px 0px 0px;font-size:14px">Select the Services You're Interested In & Order</h5></td></tr>
