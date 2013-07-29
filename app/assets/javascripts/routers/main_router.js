@@ -56,7 +56,7 @@ CaliforniaInternet.Routers.Main = Backbone.Router.extend({
       $("#graphics-five").delay(15800).fadeIn("slow").delay(2900).fadeOut(300);
 
       $("#text-six").delay(20000).fadeIn("slow")
-      $("#graphics-six").delay(20000).fadeIn("slow")
+      $("#graphics-six").delay(21000).fadeIn("slow")
 
       $('#quotes-slider').cycle({fx:'fade'});
 
