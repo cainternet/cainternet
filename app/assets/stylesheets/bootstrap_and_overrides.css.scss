@@ -125,6 +125,8 @@ box-shadow: inset 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
 }
 #cta-body {min-height:200px;background:#043a63;border-top:0px!important;-webkit-border-radius: 13px;
 border-radius: 13px;}
+#cta-container {background:hsla(360, 0%, 0%, 0.15);height:150px;margin-top:25px;padding-top:10px;-webkit-border-radius: 9px 9px 0px 0px;
+border-radius: 9px 9px 0px 0px;}
 
 // Quotes
 #quotes-container {height:100px;background: url(/assets/customer_logos.png) no-repeat center #043a63;background-size:auto 70px;}

@@ -10,8 +10,6 @@ CaliforniaInternet.Views.HomeView = Backbone.View.extend({
 		// Pan Image Background
 		this.panBackground();
         this.heroAnimation();
-		// Set up Manual Event Binding for Window
-		$(window).scroll(this.detect_scroll);
 	},
 
 	events: {
@@ -19,8 +17,7 @@ CaliforniaInternet.Views.HomeView = Backbone.View.extend({
         "click #call-to-action-btn":      "calltoAction"
     },
 
-    calltoAction: function() {
-        
+    calltoAction: function() { 
     },
 
     panBackground: function() {
@@ -34,44 +31,6 @@ CaliforniaInternet.Views.HomeView = Backbone.View.extend({
     },
 
     heroAnimation: function() {
-
-    },
-
-    detect_scroll: function() {
-    	// if ( $(window).scrollTop() >= 0 && $(window).scrollTop() <= 299 ) {
-    	//  	$("#info-box-one").removeClass('info-box-hover');
-    	//  	$("#info-box-two").removeClass('info-box-hover');
-    	//  	$("#info-box-three").removeClass('info-box-hover');
-    	//  	$("#info-box-four").removeClass('info-box-hover');
-    	//  } // End IF Statement
-
-    	//  if ( $(window).scrollTop() >= 300 && $(window).scrollTop() <= 680 ) {
-    	//  	$("#info-box-one").addClass('info-box-hover').fadeIn(900)
-    	//  	$("#info-box-two").removeClass('info-box-hover');
-    	//  	$("#info-box-three").removeClass('info-box-hover');
-    	//  	$("#info-box-four").removeClass('info-box-hover');
-    	//  } // End IF Statement
-
-    	//  if ( $(window).scrollTop() >= 681 && $(window).scrollTop() <= 1050 ) {
-    	//  	$("#info-box-two").addClass('info-box-hover');
-    	//  	$("#info-box-one").removeClass('info-box-hover');
-    	//  	$("#info-box-three").removeClass('info-box-hover');
-    	//  	$("#info-box-four").removeClass('info-box-hover');
-    	//  } // End IF Statement
-
-    	//  if ( $(window).scrollTop() >= 1051 && $(window).scrollTop() <= 1199 ) {
-    	//  	$("#info-box-three").addClass('info-box-hover');
-    	//  	$("#info-box-one").removeClass('info-box-hover');
-    	//  	$("#info-box-two").removeClass('info-box-hover');
-    	//  	$("#info-box-four").removeClass('info-box-hover');
-    	//  } // End IF Statement
-
-    	//  if ( $(window).scrollTop() >= 1200 && $(window).scrollTop() <= 1500 ) {
-    	//  	$("#info-box-four").addClass('info-box-hover');
-    	//  	$("#info-box-one").removeClass('info-box-hover');
-    	//  	$("#info-box-two").removeClass('info-box-hover');
-    	//  	$("#info-box-three").removeClass('info-box-hover');
-    	//  } // End IF Statement
     },
 
     ctaBtnHover: function() {
