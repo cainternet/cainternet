@@ -56,9 +56,10 @@ CaliforniaInternet.Routers.Main = Backbone.Router.extend({
       $("#graphics-five").delay(15800).fadeIn("slow").delay(2900).fadeOut(300);
 
       $("#text-six").delay(20000).fadeIn("slow")
-      $("#graphics-six").delay(21000).fadeIn("slow")
+      $("#graphics-six-one").delay(21000).fadeIn("slow")
+      $("#graphics-six").delay(21500).fadeIn("slow")
 
-      $("#cta-text").delay(22000).animate({
+      $("#cta-text").delay(22500).animate({
          marginTop: "-7px"
       }, 350, function() {
           $("#cta-text").animate({
