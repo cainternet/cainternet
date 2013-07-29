@@ -58,6 +58,14 @@ CaliforniaInternet.Routers.Main = Backbone.Router.extend({
       $("#text-six").delay(20000).fadeIn("slow")
       $("#graphics-six").delay(21000).fadeIn("slow")
 
+      $("#cta-text").delay(21800).animate({
+         marginTop: "-10px"
+      }, 350, function() {
+          $("#cta-text").animate({
+             marginTop: "0px"
+          }, 450)
+      });
+
       $('#quotes-slider').cycle({fx:'fade'});
 
     }, // END home
